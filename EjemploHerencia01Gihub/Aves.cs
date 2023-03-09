@@ -8,5 +8,9 @@ namespace EjemploHerencia01Gihub
 {
     internal class Aves : Animal
     {
+        public override string TipoAlimentacion()
+        {
+            return base.TipoAlimentacion() + ": Insectos";
+        }
     }
 }
