@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjemploHerencia01Gihub
 {
-    internal class Mamifero
+    internal class Mamifero : Animal
     {
     }
 }
