@@ -20,5 +20,21 @@ namespace EjemploHerencia01Gihub
 
             return cadena;
         }
+
+        public override string Nombre
+        {
+            get
+            {
+                return base.Nombre;
+            }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Error: Cadena Vacia");
+                }
+                base.Nombre = value;
+            }
+        }
     }
 }
