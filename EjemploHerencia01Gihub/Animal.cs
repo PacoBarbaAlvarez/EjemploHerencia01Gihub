@@ -12,5 +12,23 @@ namespace EjemploHerencia01Gihub
 
         protected string _alimentacion = "Comida";
         private string _nombre;
+
+        public virtual string Nombre
+        {
+            get
+            {
+                return _nombre;
+            }
+            set
+            {
+
+                if (value.Length > TAMANIO)
+                {
+                    throw new Exception("Error");
+                }
+
+                _nombre = value;
+            }
+        }
     }
 }
