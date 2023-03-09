@@ -30,5 +30,10 @@ namespace EjemploHerencia01Gihub
                 _nombre = value;
             }
         }
+
+        public virtual string TipoAlimentacion()
+        {
+            return _alimentacion;
+        }
     }
 }
